@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>From Search</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+		* {
+			font-family: Poppin, sans-serif;
+		}
+		.from-search {
+			display: flex;
+			box-shadow: 0 0 1px #ddd;
+		}
+		.fc-item {
+			border: 1px solid #ddd;
+			display: flex;
+			align-items: center;
+			padding: 20px 15px;
+			flex-grow: 1;
+		}
+		.fc-item .fc-content {
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+		}
+		.fc-item .fc-content label {
+			color: rgb(94, 109, 119);
+			margin-bottom: 5px;
+			font-size: 14px;
+			font-weight: 400;
+		}
+		.fc-item .fc-content input {
+			color: rgb(81, 145, 250);
+			font-size: 14px; 
+			font-weight: 400;
+			border: none;
+			padding: 3px 0;
+		}
+		.fc-item .fc-content input:focus {
+			outline: none;
+		}
+		.fc-item .fc-content input::placeholder {
+			color: rgb(81, 145, 250);
+			font-size: 14px; 
+			font-weight: 400;
+		}
+		.fc-item i {
+			padding-right: 13px;
+			color: #aaa;
+		}
+		.border-radius-left {
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+		}
+	</style>
+</head>
+<body>
+
+
+
+	<div class="from-search">
+		<div class="fc-item border-radius-left">
+			<i class="fas fa-map-marker-alt"></i>
+			<div class="fc-content">
+				<label for="where">Destination</label>
+				<input type="text" class="" id="where" placeholder="Where are you going?" >
+			</div>
+		</div>
+		<div class="fc-item">
+			<i class="fas fa-map-marker-alt"></i>
+			<div class="fc-content">
+				<label for="where">Destination</label>
+				<input type="text" class="" id="where" placeholder="Where are you going?" >
+			</div>
+		</div>
+		<div class="fc-item">
+			<i class="fas fa-map-marker-alt"></i>
+			<div class="fc-content">
+				<label for="where">Destination</label>
+				<input type="text" class="" id="where" placeholder="Where are you going?" >
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="https://kit.fontawesome.com/17d9afb30b.js" crossorigin="anonymous"></script>
+</body>
+</html>
