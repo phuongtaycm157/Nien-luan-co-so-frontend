@@ -54,13 +54,31 @@
 			border-top-left-radius: 3px;
 			border-bottom-left-radius: 3px;
 		}
+		.fc-btn-search {
+			background-color: #5191fa;
+			color: white;
+			font-size: 15px;
+			font-weight: 600;
+			border: none;
+			padding-left: 30px;
+			padding-right: 30px;
+			cursor: pointer;
+		}
+		.fc-btn-search:active {
+			transform: translateY(1px);
+			transition: .4s;
+		}
+		.fc-btn-search:focus  {
+			outline: none;
+		}
 	</style>
 </head>
 <body>
 
 
-
+<form>
 	<div class="from-search">
+
 		<div class="fc-item border-radius-left">
 			<i class="fas fa-map-marker-alt"></i>
 			<div class="fc-content">
@@ -68,23 +86,34 @@
 				<input type="text" class="" id="where" placeholder="Where are you going?" >
 			</div>
 		</div>
+
 		<div class="fc-item">
 			<i class="fas fa-map-marker-alt"></i>
 			<div class="fc-content">
-				<label for="where">Destination</label>
+				<label for="where">Check In - Out</label>
+				<input type="text" class="" id="where" placeholder="Where are you going?" >
+			</div>
+		</div>
+
+		<div class="fc-item">
+			<i class="fas fa-map-marker-alt"></i>
+			<div class="fc-content">
+				<label for="where">Guests</label>
 				<input type="text" class="" id="where" placeholder="Where are you going?" >
 			</div>
 		</div>
 		<div class="fc-item">
 			<i class="fas fa-map-marker-alt"></i>
 			<div class="fc-content">
-				<label for="where">Destination</label>
+				<label for="where">Advance</label>
 				<input type="text" class="" id="where" placeholder="Where are you going?" >
 			</div>
 		</div>
+
+		<button type="submit" class="fc-btn-search">Search</button>
+
 	</div>
-
-
+</form>
 
 
 	<script src="https://kit.fontawesome.com/17d9afb30b.js" crossorigin="anonymous"></script>
