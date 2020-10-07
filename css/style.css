@@ -49,13 +49,15 @@ div.dropdown-menu a.dropdown-item {
 }
 
 li.dropdown div.dropdown-menu {
+	transform: translateY(-3px);
 	display: none;
 	transition: .3s;
+	
 }
 li.dropdown:hover div.dropdown-menu {
 	display: block;
 	animation-name: DropdownAppears;
-	animation-duration: .4s;
+	animation-duration: .3s;
 }
 
 div.search-result-page {
@@ -302,11 +304,74 @@ i.fa-dot-circle {
 	transform: translate(-50%, -50%);
 }
 
+.arl {
+	background-image: url(https://remap.travelerwp.com/wp-content/uploads/2019/04/photo-1422190441165-ec2956dc9ecc-1.jpeg);
+	background-size: cover;
+	background-position: center;
+	/*background-attachment: fixed;*/
+	padding-top: 150px;
+	padding-bottom: 150px;
+	line-height: 1.5;
+}
+.arl-title {
+	color: #1a2b48;
+	font-size: 34px;
+	font-weight: 400;
+}
+.arl-sub {
+	color: #5e6d77;
+  font-size: 22px;
+}
+.btn-arl-custom {
+	background-color: rgb(81, 145, 250);
+	color: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 12px 25px;
+}
 
+.cc-content {
+	color: #768092;
+	font-size: 14px;
+}
+.cc-author-name {
+	font-weight: 500;
+	color: rgb(26, 43, 72);
+}
 
+.recent-email {
+	background-color: #f5f5f5;
+}
+.re-body h4 {
+	font-size: 24px;
+	color: rgb(26, 43, 72);
+	font-weight: 500;
+}
+.re-body p {
+	color: #5E6D77;
+	font-size: 16px;
+}
+.re-input {
+	height: 55px;
+	line-height: 53px;
+	font-size: 14px;
+	flex-grow: 1;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.re-submit {
+	height: 55px;
+	font-size: 14px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	/*border: none;*/
+	padding-left: 30px;
+	padding-right: 30px;
+}
 
-
-
+footer {
+	font-size: 14px;
+}
 
 
 
@@ -318,6 +383,6 @@ i.fa-dot-circle {
   }
   to {
   	opacity: 1;
-  	transform: translateY(0);
+  	transform: translateY(-3px);
   }
 }
